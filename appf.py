@@ -76,7 +76,7 @@ def mcommon(k):
 
 left_column, middle_column, right_column = st.columns(3)
 with left_column:
-    st.subheader("Total Sales:")
+    st.subheader("Total des Ventes:")
     st.subheader(f"US $ {total_sales:,}")
 with middle_column:
     with st.expander("**Les k produits les plus achetés ensemble**",expanded=False):
@@ -99,7 +99,7 @@ with middle_column:
         # Fermeture de la div
         st.markdown('</div>', unsafe_allow_html=True)
 with right_column:
-    st.subheader("Average Sales Per Transaction:")
+    st.subheader("moyenne des Ventes par Transaction:")
     st.subheader(f"US $ {average_sale_by_transaction}")
 with st.expander("Data"):
         st.write(df_selection)
